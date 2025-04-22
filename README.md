@@ -1,7 +1,6 @@
-# Title 
-Missing named exports for asset/inline with output.module in Webpack 5.99.0+
+# Missing named exports for asset/inline with output.module in Webpack 5.99.0+
 
-## Description:
+## Bug Report:
 After upgrading from Webpack 5.98.0 to 5.99.0, I noticed that named exports for assets handled via type: 'asset/inline' are no longer present in the output when using output.module: true and experiments.outputModule.
 
 In previous versions, Webpack generated explicit export statements for these assets. Starting from 5.99.0, this behavior changed, causing missing exports and breaking consumers relying on them.
