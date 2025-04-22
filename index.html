@@ -1,0 +1,11 @@
+<html>
+  <script type="module">
+    import { logo } from "./dist/index.mjs";
+    console.log(logo); 
+    /**
+     * Webpack@^5.99.0: Uncaught SyntaxError: The requested module './dist/index.mjs' does not provide an export named 'logo' (at (index):3:14)
+     * 
+     * Webpack@5.98.0: Prints out the logo in base64 format
+     * /
+  </script>
+</html>
